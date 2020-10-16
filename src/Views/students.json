@@ -1,0 +1,19 @@
+var student name = [
+    "Aanta Mishra";
+    "Arun Pariyar";
+    "Asmita Neupane";
+    "Nisha Pariyar";
+    "Sajesh Piya";
+    "Sushil Subedi";
+];
+var batch = [
+    "2071";
+    "2072";
+    '2073';
+    '2075';
+    '2076';
+];
+
+$('#form-autocomplete').mdbAutocomplete({
+    data: studentname, batch
+    });
