@@ -5,10 +5,11 @@ import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
-import AddBook from "./views/AddBook";
-import ListBook from "./views/ListBook";
+import AddBook from "./Views/AddBook";
+import ListBook from "./Views/ListBook";
 import Footer from "./Components/Footer";
-import Students from "./views/Students";
+import Students from "./Views/Students";
+import BookBorrow from "./Views/BookBorrow"
 
 // ReactDOM.render(<App />, document.getElementById("root"));
 ReactDOM.render(
@@ -20,6 +21,7 @@ ReactDOM.render(
         <Route path="/addbook" name="AddBook" component={AddBook}></Route>
         <Route path="/listbook" name="ListBook" component={ListBook}></Route>
         <Route path="/students" name="Students" component={Students}></Route>
+        <Route path="/bookborrow" name="BookBorrow" component={BookBorrow}></Route>
       </Switch>
     </div>{" "}
     <Footer></Footer>
